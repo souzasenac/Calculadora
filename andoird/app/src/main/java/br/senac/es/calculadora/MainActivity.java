@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         final Button botaoBarra = (Button) findViewById(R.id.button4);
         final Button botaoDell = (Button) findViewById(R.id.button21);
 
+        txtVisor.setText(visor);
 
         botaoVirg.setOnClickListener(new Button.OnClickListener() {
             @Override
@@ -150,11 +151,49 @@ public class MainActivity extends AppCompatActivity {
         botaoMais.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-              String lastNumero = visor.charAt(visor.length());
-                if()){
 
-              }
-                visor = visor + "+";
+                if(visor.endsWith("+") ){
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor  = modificado + "+";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                if(visor.endsWith("-") ){
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor  = modificado + "+";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                if(visor.endsWith("/") ){
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor  = modificado + "+";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                if(visor.endsWith("X") ){
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor  = modificado + "+";
+
+
+                    txtVisor.setText(visor);
+                }
+                visor  = visor + "+";
+
+
                 txtVisor.setText(visor);
             }
         });
@@ -162,24 +201,162 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                visor = visor + "X";
+
+
+
+                if(visor.endsWith("+") ){
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor  = modificado + "X";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                if(visor.endsWith("-") ){
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor  = modificado + "X";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                if(visor.endsWith("/") ){
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor  = modificado + "X";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                if(visor.endsWith("+") ){
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor  = modificado + "X";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                visor  = visor + "X";
+
+
                 txtVisor.setText(visor);
+
             }
+
+
+
+
         });
         botaoMenos.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                visor = visor + "-";
+                if(visor.endsWith("+") ){
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor  = modificado + "-";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                if(visor.endsWith("X") ){
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor  = modificado + "-";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                if(visor.endsWith("/") ){
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor  = modificado + "-";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                if(visor.endsWith("+") ){
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor  = modificado + "-";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                visor  = visor + "-";
                 txtVisor.setText(visor);
+
             }
         });
         botaoBarra.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                visor = visor + "/";
-                txtVisor.setText(visor);
+                if (visor.endsWith("+")) {
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor = modificado + "/";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                if (visor.endsWith("-")) {
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor = modificado + "/";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                if (visor.endsWith("X")) {
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor = modificado + "/";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                if (visor.endsWith("+")) {
+                    String modificado = visor.substring(0, visor.length() - 1);
+
+
+                    visor = modificado + "/";
+
+
+                    txtVisor.setText(visor);
+                }
+
+                if(visor.endsWith("/") ){
+
+                    txtVisor.setText(visor);
+                }
+                if(visor.endsWith("") ){
+                    visor  = visor + "/";
+
+                    txtVisor.setText(visor);
+                }
             }
         });
         botaoDell.setOnClickListener(new Button.OnClickListener() {
